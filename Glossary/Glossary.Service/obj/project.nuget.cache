@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "oKgu6JGZkVLstVpJgEfnVLYdmgkeVx+O33UvuXYYQUYWSej8B2lhzWi2b2y22h7N2MqRlKT9MjWJ6Al/4IiU9A==",
+  "dgSpecHash": "h2eGtsSKJ/zDnuxgkv/im5+IZAlTlllUx39nDTo/RBRxbB3ghDBUmBT+Qv7FsjZtodMVIzbTsmLXIYl5NMzWuw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Andrija\\glossary-repository\\Glossary\\Glossary.Service\\Glossary.Service.csproj",
   "expectedPackageFiles": [
@@ -30,6 +30,9 @@
     "C:\\Users\\Andrija\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
     "C:\\Users\\Andrija\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
     "C:\\Users\\Andrija\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
+    "C:\\Users\\Andrija\\.nuget\\packages\\nlog\\5.2.7\\nlog.5.2.7.nupkg.sha512",
+    "C:\\Users\\Andrija\\.nuget\\packages\\nlog.extensions.logging\\5.3.7\\nlog.extensions.logging.5.3.7.nupkg.sha512",
+    "C:\\Users\\Andrija\\.nuget\\packages\\nlog.web.aspnetcore\\5.3.7\\nlog.web.aspnetcore.5.3.7.nupkg.sha512",
     "C:\\Users\\Andrija\\.nuget\\packages\\npgsql\\7.0.6\\npgsql.7.0.6.nupkg.sha512",
     "C:\\Users\\Andrija\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\7.0.11\\npgsql.entityframeworkcore.postgresql.7.0.11.nupkg.sha512",
     "C:\\Users\\Andrija\\.nuget\\packages\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",

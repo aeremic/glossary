@@ -1,6 +1,7 @@
 using System.Reflection;
 using Glossary.Service.Infrastructure;
 using Microsoft.EntityFrameworkCore;
+using NLog.Web;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,6 +9,10 @@ builder.Services.AddMediatR(config => config.RegisterServicesFromAssembly(Assemb
 builder.Services.AddAutoMapper(typeof(Program));
 builder.Services.AddDbContext<Repository>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+builder.Logging.ClearProviders();
+builder.Logging.SetMinimumLevel(LogLevel.Trace);
+builder.Host.UseNLog();
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();

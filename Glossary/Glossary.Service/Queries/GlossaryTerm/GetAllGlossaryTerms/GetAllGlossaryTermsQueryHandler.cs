@@ -3,6 +3,7 @@ using Glossary.Service.Common.Models;
 using Glossary.Service.Infrastructure;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
+using NLog;
 
 namespace Glossary.Service.Queries.GlossaryTerm.GetAllGlossaryTerms;
 
@@ -12,6 +13,7 @@ public class GetAllGlossaryTermsQueryHandler : IRequestHandler<GetAllGlossaryTer
 
     private readonly Repository _repository;
     private readonly IMapper _mapper;
+    private readonly Logger _logger;
 
     #endregion
 
@@ -21,6 +23,7 @@ public class GetAllGlossaryTermsQueryHandler : IRequestHandler<GetAllGlossaryTer
     {
         _repository = repository;
         _mapper = mapper;
+        _logger = LogManager.GetCurrentClassLogger();
     }
 
     #endregion
@@ -41,6 +44,7 @@ public class GetAllGlossaryTermsQueryHandler : IRequestHandler<GetAllGlossaryTer
         catch (Exception ex)
         {
             // TODO: Log
+            _logger.Error(ex);
         }
 
         return result;

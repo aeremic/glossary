@@ -94,3 +94,7 @@ C:\Users\Andrija\glossary-repository\Glossary\Glossary.Service\obj\Debug\net7.0\
 C:\Users\Andrija\glossary-repository\Glossary\Glossary.Service\obj\Debug\net7.0\Glossary.Service.pdb
 C:\Users\Andrija\glossary-repository\Glossary\Glossary.Service\obj\Debug\net7.0\Glossary.Service.genruntimeconfig.cache
 C:\Users\Andrija\glossary-repository\Glossary\Glossary.Service\obj\Debug\net7.0\ref\Glossary.Service.dll
+C:\Users\Andrija\glossary-repository\Glossary\Glossary.Service\bin\Debug\net7.0\nlog.config
+C:\Users\Andrija\glossary-repository\Glossary\Glossary.Service\bin\Debug\net7.0\NLog.dll
+C:\Users\Andrija\glossary-repository\Glossary\Glossary.Service\bin\Debug\net7.0\NLog.Extensions.Logging.dll
+C:\Users\Andrija\glossary-repository\Glossary\Glossary.Service\bin\Debug\net7.0\NLog.Web.AspNetCore.dll

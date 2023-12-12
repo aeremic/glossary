@@ -1,6 +1,7 @@
 ﻿using Glossary.Service.Infrastructure;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
+using NLog;
 
 namespace Glossary.Service.Commands.GlossaryTerm.DeleteGlossaryTerm;
 
@@ -9,6 +10,7 @@ public class DeleteGlossaryTermCommandHandler : IRequestHandler<DeleteGlossaryTe
     #region Properties
 
     private readonly Repository _repository;
+    private readonly Logger _logger;
 
     #endregion
 
@@ -17,6 +19,7 @@ public class DeleteGlossaryTermCommandHandler : IRequestHandler<DeleteGlossaryTe
     public DeleteGlossaryTermCommandHandler(Repository repository)
     {
         _repository = repository;
+        _logger = LogManager.GetCurrentClassLogger();
     }
 
     #endregion
@@ -44,6 +47,7 @@ public class DeleteGlossaryTermCommandHandler : IRequestHandler<DeleteGlossaryTe
         catch (Exception ex)
         {
             // TODO: Log
+            _logger.Error(ex);
         }
 
         return result;
