@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Glossary.Service", "Glossary.Service\Glossary.Service.csproj", "{9582AFB2-DAAA-43BB-9C34-196903F69F7A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Glossary.UnitTests", "Glossary.UnitTests\Glossary.UnitTests.csproj", "{957C7DD7-B547-40F2-AF01-D43B08D64621}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9582AFB2-DAAA-43BB-9C34-196903F69F7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9582AFB2-DAAA-43BB-9C34-196903F69F7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9582AFB2-DAAA-43BB-9C34-196903F69F7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9582AFB2-DAAA-43BB-9C34-196903F69F7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{957C7DD7-B547-40F2-AF01-D43B08D64621}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{957C7DD7-B547-40F2-AF01-D43B08D64621}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{957C7DD7-B547-40F2-AF01-D43B08D64621}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{957C7DD7-B547-40F2-AF01-D43B08D64621}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
