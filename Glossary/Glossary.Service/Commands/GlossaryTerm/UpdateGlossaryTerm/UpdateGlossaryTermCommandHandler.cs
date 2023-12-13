@@ -1,6 +1,7 @@
 ﻿using Glossary.Service.Infrastructure;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
+using NLog;
 
 namespace Glossary.Service.Commands.GlossaryTerm.UpdateGlossaryTerm;
 
@@ -9,6 +10,7 @@ public class UpdateGlossaryTermCommandHandler : IRequestHandler<UpdateGlossaryTe
     #region Properties
 
     private readonly Repository _repository;
+    private readonly Logger _logger;
 
     #endregion
 
@@ -17,6 +19,7 @@ public class UpdateGlossaryTermCommandHandler : IRequestHandler<UpdateGlossaryTe
     public UpdateGlossaryTermCommandHandler(Repository repository)
     {
         _repository = repository;
+        _logger = LogManager.GetCurrentClassLogger();
     }
 
     #endregion
@@ -45,7 +48,7 @@ public class UpdateGlossaryTermCommandHandler : IRequestHandler<UpdateGlossaryTe
         }
         catch (Exception ex)
         {
-            // TODO: Log
+            _logger.Error(ex);
         }
 
         return result;

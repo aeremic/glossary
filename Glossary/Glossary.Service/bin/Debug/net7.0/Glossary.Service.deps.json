@@ -16,6 +16,7 @@
           "Microsoft.EntityFrameworkCore.Design": "7.0.14",
           "Microsoft.EntityFrameworkCore.Tools": "7.0.14",
           "NLog": "5.2.7",
+          "NLog.Database": "5.2.7",
           "NLog.Web.AspNetCore": "5.3.7",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "7.0.11",
           "Swashbuckle.AspNetCore": "6.4.0"
@@ -225,6 +226,17 @@
       "NLog/5.2.7": {
         "runtime": {
           "lib/netstandard2.0/NLog.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.2.7.2287"
+          }
+        }
+      },
+      "NLog.Database/5.2.7": {
+        "dependencies": {
+          "NLog": "5.2.7"
+        },
+        "runtime": {
+          "lib/netstandard2.0/NLog.Database.dll": {
             "assemblyVersion": "5.0.0.0",
             "fileVersion": "5.2.7.2287"
           }
@@ -527,6 +539,13 @@
       "sha512": "sha512-Ww/0b6V1NL8iqpFKtRKVQFFX03LoowNzYeNG6FpVzmhgCfLAkW0h/4lT3+V8mHfyvtHptNoV8Cz0YePLFRUaPA==",
       "path": "nlog/5.2.7",
       "hashPath": "nlog.5.2.7.nupkg.sha512"
+    },
+    "NLog.Database/5.2.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-48KLKpl6HTB2aIt/6MJSyIYzp/P6WREi888afgKohW7sHA0c1fcJ+DNigCkOvRZ82Z3v4MLBrn+XVclG/KSfHA==",
+      "path": "nlog.database/5.2.7",
+      "hashPath": "nlog.database.5.2.7.nupkg.sha512"
     },
     "NLog.Extensions.Logging/5.3.7": {
       "type": "package",

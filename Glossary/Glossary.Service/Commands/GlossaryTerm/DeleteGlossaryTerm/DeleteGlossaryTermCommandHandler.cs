@@ -46,7 +46,6 @@ public class DeleteGlossaryTermCommandHandler : IRequestHandler<DeleteGlossaryTe
         }
         catch (Exception ex)
         {
-            // TODO: Log
             _logger.Error(ex);
         }
 

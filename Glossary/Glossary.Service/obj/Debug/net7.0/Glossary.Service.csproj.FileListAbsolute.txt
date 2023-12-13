@@ -98,3 +98,4 @@ C:\Users\Andrija\glossary-repository\Glossary\Glossary.Service\bin\Debug\net7.0\
 C:\Users\Andrija\glossary-repository\Glossary\Glossary.Service\bin\Debug\net7.0\NLog.dll
 C:\Users\Andrija\glossary-repository\Glossary\Glossary.Service\bin\Debug\net7.0\NLog.Extensions.Logging.dll
 C:\Users\Andrija\glossary-repository\Glossary\Glossary.Service\bin\Debug\net7.0\NLog.Web.AspNetCore.dll
+C:\Users\Andrija\glossary-repository\Glossary\Glossary.Service\bin\Debug\net7.0\NLog.Database.dll

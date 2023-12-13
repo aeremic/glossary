@@ -12,7 +12,7 @@ namespace Glossary.Service.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]
-public class GlossaryTermController
+public class GlossaryTermController : Controller
 {
     #region Properties
 

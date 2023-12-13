@@ -1,5 +1,6 @@
 ﻿using Glossary.Service.Infrastructure;
 using MediatR;
+using NLog;
 
 namespace Glossary.Service.Commands.GlossaryTerm.CreateGlossaryTerm;
 
@@ -8,6 +9,7 @@ public class CreateGlossaryTermCommandHandler : IRequestHandler<CreateGlossaryTe
     #region Properties
 
     private readonly Repository _repository;
+    private readonly Logger _logger;
 
     #endregion
 
@@ -16,6 +18,7 @@ public class CreateGlossaryTermCommandHandler : IRequestHandler<CreateGlossaryTe
     public CreateGlossaryTermCommandHandler(Repository repository)
     {
         _repository = repository;
+        _logger = LogManager.GetCurrentClassLogger();
     }
 
     #endregion
@@ -41,7 +44,7 @@ public class CreateGlossaryTermCommandHandler : IRequestHandler<CreateGlossaryTe
         }
         catch (Exception ex)
         {
-            // TODO: Log
+            _logger.Error(ex);
         }
 
         return result;

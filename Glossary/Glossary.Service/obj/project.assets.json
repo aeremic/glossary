@@ -437,6 +437,22 @@
           }
         }
       },
+      "NLog.Database/5.2.7": {
+        "type": "package",
+        "dependencies": {
+          "NLog": "5.2.7"
+        },
+        "compile": {
+          "lib/netstandard2.0/NLog.Database.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/NLog.Database.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "NLog.Extensions.Logging/5.3.7": {
         "type": "package",
         "dependencies": {
@@ -1492,6 +1508,31 @@
         "nlog.nuspec"
       ]
     },
+    "NLog.Database/5.2.7": {
+      "sha512": "48KLKpl6HTB2aIt/6MJSyIYzp/P6WREi888afgKohW7sHA0c1fcJ+DNigCkOvRZ82Z3v4MLBrn+XVclG/KSfHA==",
+      "type": "package",
+      "path": "nlog.database/5.2.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "N.png",
+        "README.md",
+        "lib/net35/NLog.Database.dll",
+        "lib/net35/NLog.Database.xml",
+        "lib/net45/NLog.Database.dll",
+        "lib/net45/NLog.Database.xml",
+        "lib/net46/NLog.Database.dll",
+        "lib/net46/NLog.Database.xml",
+        "lib/netstandard1.3/NLog.Database.dll",
+        "lib/netstandard1.3/NLog.Database.xml",
+        "lib/netstandard1.5/NLog.Database.dll",
+        "lib/netstandard1.5/NLog.Database.xml",
+        "lib/netstandard2.0/NLog.Database.dll",
+        "lib/netstandard2.0/NLog.Database.xml",
+        "nlog.database.5.2.7.nupkg.sha512",
+        "nlog.database.nuspec"
+      ]
+    },
     "NLog.Extensions.Logging/5.3.7": {
       "sha512": "3VJFapWBopaQvGSuSUwWxjrK43RPC+pSi8yJisRQMdN87e/xmWLCzqrCzujU2fx9ktq4kRkZC3m/9PRLNBZ44g==",
       "type": "package",
@@ -1801,6 +1842,7 @@
       "Microsoft.EntityFrameworkCore.Design >= 7.0.14",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.14",
       "NLog >= 5.2.7",
+      "NLog.Database >= 5.2.7",
       "NLog.Web.AspNetCore >= 5.3.7",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 7.0.11",
       "Swashbuckle.AspNetCore >= 6.4.0"
@@ -1878,6 +1920,10 @@
             "version": "[7.0.14, )"
           },
           "NLog": {
+            "target": "Package",
+            "version": "[5.2.7, )"
+          },
+          "NLog.Database": {
             "target": "Package",
             "version": "[5.2.7, )"
           },
