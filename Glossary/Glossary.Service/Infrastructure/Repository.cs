@@ -15,7 +15,7 @@ public class Repository : DbContext
 
     #region Entities
 
-    public required DbSet<GlossaryTerm> GlossaryTerms { get; set; }
+    public DbSet<GlossaryTerm> GlossaryTerms { get; set; } = null!;
 
     #endregion
 

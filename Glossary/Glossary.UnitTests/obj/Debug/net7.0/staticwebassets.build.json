@@ -1,11 +1,23 @@
 {
   "Version": 1,
-  "Hash": "3vi/SvwKtdvzZCiyUtlooDpWiFdJYpInm17XuOMC2Tw=",
+  "Hash": "ElJf0P3UPgQoGa1ILfwGMsQIRviUtVIwjUi3es58rAA=",
   "Source": "Glossary.UnitTests",
   "BasePath": "_content/Glossary.UnitTests",
   "Mode": "Default",
   "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [],
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "C:\\Users\\Andrija\\glossary-repository\\Glossary\\Glossary.Service\\Glossary.Service.csproj",
+      "Version": 2,
+      "Source": "Glossary.Service",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
+    }
+  ],
   "DiscoveryPatterns": [],
   "Assets": []
 }
