@@ -13,26 +13,6 @@ namespace Glossary.UnitTests.Queries.GlossaryTerm.GetGlossaryTerm;
 public class GetGlossaryTermQueryHandlerTest
 {
     [Test]
-    public async Task GetTypeTest()
-    {
-        var dbContextOptions = new DbContextOptionsBuilder<Repository>()
-            .UseInMemoryDatabase(databaseName: "getGlossaryTermQueryHandlerTest_inMemory_db")
-            .Options;
-
-        IMapper mapper = new Mapper(new MapperConfiguration(cfg => 
-            cfg.AddProfile(new GlossaryTermProfile())));
-
-        await using var context = new Repository(dbContextOptions);
-        context.GlossaryTerms.Add(new() { Term = "Term 1", Definition = "Definition 1" });
-        await context.SaveChangesAsync();
-
-        var handler = new GetGlossaryTermQueryHandler(context, mapper);
-        var result = await handler.Handle(new GetGlossaryTermQuery { Id = 1 }, CancellationToken.None);
-
-        result.ShouldBeOfType<GlossaryTermDto>();
-    }
-
-    [Test]
     public async Task GetValueTest()
     {
         var dbContextOptions = new DbContextOptionsBuilder<Repository>()
@@ -50,6 +30,8 @@ public class GetGlossaryTermQueryHandlerTest
         var result = await handler.Handle(new GetGlossaryTermQuery { Id = 1 }, CancellationToken.None);
 
         result.ShouldNotBeNull();
+        result.ShouldBeOfType<GlossaryTermDto>();
+        
         result.Id.ShouldBe(1);
         result.Term.ShouldBe("Term 1");
         result.Definition.ShouldBe("Definition 1");
