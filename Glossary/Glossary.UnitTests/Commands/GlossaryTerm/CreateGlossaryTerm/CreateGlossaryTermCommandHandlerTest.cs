@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using NUnit.Framework;
 using Shouldly;
 
-namespace Glossary.UnitTests.Commands.CreateGlossaryTerm;
+namespace Glossary.UnitTests.Commands.GlossaryTerm.CreateGlossaryTerm;
 
 [TestFixture]
 public class CreateGlossaryTermCommandHandlerTest
@@ -13,7 +13,7 @@ public class CreateGlossaryTermCommandHandlerTest
     public async Task CreateTest()
     {
         var dbContextOptions = new DbContextOptionsBuilder<Repository>()
-            .UseInMemoryDatabase(databaseName: "glossary_db_InMemory")
+            .UseInMemoryDatabase(databaseName: "createGlossaryTermCommandHandlerTest_inMemory_db")
             .Options;
 
         await using var context = new Repository(dbContextOptions);

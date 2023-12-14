@@ -16,7 +16,7 @@ public class GetGlossaryTermQueryHandlerTest
     public async Task GetTypeTest()
     {
         var dbContextOptions = new DbContextOptionsBuilder<Repository>()
-            .UseInMemoryDatabase(databaseName: "glossary_db_InMemory")
+            .UseInMemoryDatabase(databaseName: "getGlossaryTermQueryHandlerTest_inMemory_db")
             .Options;
 
         IMapper mapper = new Mapper(new MapperConfiguration(cfg => 
@@ -36,7 +36,7 @@ public class GetGlossaryTermQueryHandlerTest
     public async Task GetValueTest()
     {
         var dbContextOptions = new DbContextOptionsBuilder<Repository>()
-            .UseInMemoryDatabase(databaseName: "glossary_db_InMemory")
+            .UseInMemoryDatabase(databaseName: "getGlossaryTermQueryHandlerTest_inMemory_db")
             .Options;
 
         IMapper mapper = new Mapper(new MapperConfiguration(cfg => 

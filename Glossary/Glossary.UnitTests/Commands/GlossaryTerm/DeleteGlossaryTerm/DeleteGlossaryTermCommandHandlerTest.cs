@@ -1,11 +1,10 @@
-﻿using Glossary.Service.Commands.GlossaryTerm.CreateGlossaryTerm;
-using Glossary.Service.Commands.GlossaryTerm.DeleteGlossaryTerm;
+﻿using Glossary.Service.Commands.GlossaryTerm.DeleteGlossaryTerm;
 using Glossary.Service.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 using NUnit.Framework;
 using Shouldly;
 
-namespace Glossary.UnitTests.Commands.DeleteGlossaryTerm;
+namespace Glossary.UnitTests.Commands.GlossaryTerm.DeleteGlossaryTerm;
 
 [TestFixture]
 public class DeleteGlossaryTermCommandHandlerTest
@@ -14,7 +13,7 @@ public class DeleteGlossaryTermCommandHandlerTest
     public async Task DeleteTest()
     {
         var dbContextOptions = new DbContextOptionsBuilder<Repository>()
-            .UseInMemoryDatabase(databaseName: "glossary_db_InMemory")
+            .UseInMemoryDatabase(databaseName: "deleteGlossaryTermCommandHandlerTest_inMemory_db")
             .Options;
 
         await using var context = new Repository(dbContextOptions);

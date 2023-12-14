@@ -21,6 +21,7 @@
 
 
     <ItemGroup>
+      <Folder Include="Commands\GlossaryTerm\" />
       <Folder Include="Mocks\" />
     </ItemGroup>
 
