@@ -2,7 +2,6 @@
 using Glossary.Service.Common.Models;
 using Glossary.Service.Infrastructure;
 using Glossary.Service.Mapper;
-using Glossary.Service.Queries.GlossaryTerm.GetGlossaryTerm;
 using Glossary.Service.Queries.GlossaryTerm.GetSortedGlossaryTerms;
 using Microsoft.EntityFrameworkCore;
 using NUnit.Framework;

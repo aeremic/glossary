@@ -9,6 +9,5 @@ public class GlossaryTermProfile : Profile
     public GlossaryTermProfile()
     {
         CreateMap<GlossaryTerm, GlossaryTermDto>();
-        CreateMap<List<GlossaryTerm>, GlossaryTermDto>();
     }
 }

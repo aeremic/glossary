@@ -39,7 +39,7 @@ public class GetAllGlossaryTermsQueryHandler : IRequestHandler<GetAllGlossaryTer
             var glossaryTerms = await _repository.GlossaryTerms
                 .ToListAsync(cancellationToken);
 
-            result = _mapper.Map<List<Domains.GlossaryTerm>, List<GlossaryTermDto>>(glossaryTerms);
+            result = _mapper.Map<List<GlossaryTermDto>>(glossaryTerms);
         }
         catch (Exception ex)
         {
