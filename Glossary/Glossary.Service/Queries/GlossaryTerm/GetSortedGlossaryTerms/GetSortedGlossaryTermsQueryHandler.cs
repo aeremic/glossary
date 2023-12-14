@@ -42,7 +42,7 @@ namespace Glossary.Service.Queries.GlossaryTerm.GetSortedGlossaryTerms
                     .ThenBy(glossaryTerm => glossaryTerm.Definition)
                     .ToListAsync(cancellationToken);
 
-                result = _mapper.Map<List<Domains.GlossaryTerm>, List<GlossaryTermDto>>(glossaryTerms);
+                result = _mapper.Map<List<GlossaryTermDto>>(glossaryTerms);
             }
             catch (Exception ex)
             {

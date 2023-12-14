@@ -6,6 +6,13 @@
 	<s:Boolean x:Key="/Default/Environment/InlayHints/GeneralInlayHintsOptions/EnableInlayHints/@EntryValue">True</s:Boolean>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ae1ffab7_002D865c_002D41ee_002D971b_002Dd8a1ef9e51eb/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="GetTest" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::957C7DD7-B547-40F2-AF01-D43B08D64621::net7.0::Glossary.UnitTests.Tests.GetGlossaryTerm.GetGlossaryTermQueryHandlerTest.GetTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::957C7DD7-B547-40F2-AF01-D43B08D64621::net7.0::Glossary.UnitTests.Queries.GlossaryTerm.GetGlossaryTerm.GetGlossaryTermQueryHandlerTest.GetValueTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::957C7DD7-B547-40F2-AF01-D43B08D64621::net7.0::Glossary.UnitTests.Queries.GlossaryTerm.GetSortedGlossaryTerms.GetSortedGlossaryTermsQueryHandlerTest.GetSortedValuesTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::957C7DD7-B547-40F2-AF01-D43B08D64621::net7.0::Glossary.UnitTests.Commands.CreateGlossaryTerm.CreateGlossaryTermCommandHandlerTest.CreateTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::957C7DD7-B547-40F2-AF01-D43B08D64621::net7.0::Glossary.UnitTests.Commands.DeleteGlossaryTerm.DeleteGlossaryTermCommandHandlerTest.DeleteTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::957C7DD7-B547-40F2-AF01-D43B08D64621::net7.0::Glossary.UnitTests.Commands.UpdateGlossaryTerm.UpdateGlossaryTermCommandHandlerTest.DeleteTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::957C7DD7-B547-40F2-AF01-D43B08D64621::net7.0::Glossary.UnitTests.Queries.GlossaryTerm.GetGlossaryTerm.GetGlossaryTermQueryHandlerTest.GetTypeTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::957C7DD7-B547-40F2-AF01-D43B08D64621::net7.0::Glossary.UnitTests.Queries.GlossaryTerm.GetSortedGlossaryTerms.GetSortedGlossaryTermsQueryHandlerTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::957C7DD7-B547-40F2-AF01-D43B08D64621::net7.0::Glossary.UnitTests.Queries.GlossaryTerm.GetGlossaryTerm.GetGlossaryTermQueryHandlerTest&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
